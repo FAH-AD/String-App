@@ -1,17 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div className="app">
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Pricing</li>
-        </ul>
-      </nav>
-    </div>
+    <>
+   
+    {/* <Navbar title='TextUtils' about='About' home='Home'/> */}
+    <Navbar title='TextUtils' about='' home=''/>
+    
+    
+    </>
+    
   );
 }
 
