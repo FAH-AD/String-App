@@ -4,12 +4,12 @@ import './App.css';
 import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextArea from './Components/TextArea';
-// import { 
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   Link
-//  } from 'react-router-dom';
+import { 
+  BrowserRouter as Router,
+  Routes,
+  Route
+
+ } from 'react-router-dom';
 function App() {
   const [mode,setMode]=useState('light')
  
@@ -25,24 +25,24 @@ function App() {
   }
   
   return (
-    // <Router>
+    <Router>
     <>
    
      <Navbar title='Text_works' about='About' home='Home' mode={mode} toggle={toggleMode}/> 
     
     <div className="container">
-    {/* <Routes> */}
-        {/* <Route exact path="/about" element={<About/>}/> */}
-          {/* <Route exact path="/" element= */}
-         <TextArea heading='Enter text below to Analyze' mode={mode}/>
+    <Routes>
+        <Route exact path="/about" element={<About mode={mode} />}/>
+          <Route exact path="/" element=
+         {<TextArea heading='Enter text below to Analyze' mode={mode}/>}/>
           
-     {/* </Routes> */}
+     </Routes>
       
     
     </div>
     
     </>
-    /* </Router> */
+     </Router> 
     
   );
 }
