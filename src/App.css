@@ -1,0 +1,24 @@
+@font-face {
+    font-family: ChivoMono;
+    src: url(../public/fonts/ChivoMono-Regular.ttf);
+}
+@font-face {
+    font-family: Dongle;
+    src: url(../public/fonts/Dongle-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../public/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Merriweather;
+    src: url(../public/fonts/Merriweather-Regular.ttf);
+}
+
+.mt{
+    margin-top: 10px;
+}
+.mr{
+    margin-left: 10px;
+}
+
